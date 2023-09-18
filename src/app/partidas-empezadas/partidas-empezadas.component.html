@@ -1,0 +1,32 @@
+<div id="contPrincipal" class="container">
+  <!-- Título Principal -->
+  <div class="row">
+      <div class="col-3">
+          <button type="button" class="btn btn-outline-light retro-button" routerLink="">Volver al menú</button>
+      </div>
+      <div class="col-9">
+          <h1 class="retro-text">Tabla de partidas empezadas</h1>
+          <div class="">
+            <table class="table table-striped table-class retro-bg">
+                <thead>
+                    <tr>
+                        <th class="retro-text">Código</th>
+                        <th class="retro-text">Jugador uno</th>
+                        <th class="retro-text">Unirse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let partida of partidas">
+                        <td class="retro-text">{{partida.id}}</td>
+                        <td class="retro-text">{{partida.jugador1?.nombre}}</td>
+                        <td class="retro-text">
+                            <button type="button" class="btn btn-outline-light retro-button" (click)="unirsePartida(partida.id)">Unirse</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+  </div>
+  
+</div>

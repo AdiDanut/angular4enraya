@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* Estilo retro para el texto */
+.retro-text {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  color: #ff0000; /* Color de fuente rojo */
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Estilo retro para el fondo del menú con colores de Conecta 4 */
+.retro-bg {
+  background-color: #f7b32b; /* Fondo amarillo suave */
+  border: 2px solid #ff0000; /* Borde rojo */
+  box-shadow: 0px 0px 10px #ff0000; /* Sombra roja */
+  padding: 20px;
+}
+
+/* Estilo retro para los botones */
+.retro-button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  background-color: #ff0000; /* Fondo rojo */
+  color: #fff; /* Color de fuente blanco */
+  border: 2px solid #ff0000; /* Borde rojo */
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.retro-button:hover {
+  background-color: #fff; /* Fondo blanco al pasar el mouse */
+  color: #ff0000; /* Color de fuente rojo al pasar el mouse */
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}

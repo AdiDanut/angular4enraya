@@ -1,0 +1,32 @@
+<!-- Encabezado con Barra de Navegación de Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <a class="navbar-brand" routerLink="">4 En Raya</a>
+  </nav>
+
+<!-- Contenedor principal -->
+<div id="contPrincipal" class="container">
+  <!-- Título Principal -->
+  <div class="row">
+      <div class="col-4">
+          <button type="button" id="botonTitulo" class="btn btn-outline-light retro-button" routerLink="">Volver al menú</button>
+      </div>
+      <div class="col-8">
+          <h1 id="titulo" class="retro-text">Creando nueva partida</h1>
+      </div>
+  </div>
+</div>
+<div id="menu" class="row align-items-md-stretch">
+  <div class="col-md-12">
+      <div class="h-100 p-5 text-white rounded-3 retro-bg">
+          <div id="titulo_menu">
+              <h2 class="retro-text">Introduce tu nombre para jugar:</h2>
+          </div>
+          <br>
+          <div id="errorDiv" class="text-dange retro-text">{{ errorMessage }}</div>
+          <div id="elementos-menu">
+              <input id="input-nombre" class="form-control input-texto retro-text" type="text" placeholder="Escribelo aquí" [(ngModel)]="this.jugador.nombre">
+              <button class="btn btn-outline-light retro-button" type="button" (click)="crearPartida()">Crear partida</button>
+          </div>
+      </div>
+  </div>
+</div>
